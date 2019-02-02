@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="2160pt" height="3024pt" viewBox="0 0 2160 3024" overflow="visible" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <path d="M1552.491,1173.785 L1552.491,1740.714 L1807.609,1740.714 L1807.609,1173.785 z" stroke="#0000FF" stroke-width="0.24" fill-opacity="0" />
-  <path d="M1295.444,1173.785 L1295.444,1740.714 L1493.869,1740.714 L1493.869,1173.785 z" stroke="#0000FF" stroke-width="0.24" fill-opacity="0" />
-  <path d="M659.8943,1173.785 L1113.438,1173.785 L1113.438,1740.714 L659.8943,1740.714 z" stroke="#0000FF" stroke-width="0.24" fill-opacity="0" />
-  <path d="M659.8943,1044.326 L659.8943,604.9559 L1368.556,604.9559 L1368.556,845.9008 L1113.438,845.9008 L1113.438,1044.326 z" stroke="#0000FF" stroke-width="0.24" fill-opacity="0" />
-  <path d="M659.8943,1884.044 L1113.438,1884.044 L1113.438,2082.469 L1368.556,2082.469 L1368.556,2323.414 L659.8943,2323.414 z" stroke="#0000FF" stroke-width="0.24" fill-opacity="0" />
+  <path d="M609.6184,1206.105 L1063.162,1206.105 L1063.162,1773.035 L609.6184,1773.035 z" stroke="#0000FF" stroke-width="0.24" fill-opacity="0" />
+  <path d="M1245.168,1206.105 L1245.168,1773.035 L1443.594,1773.035 L1443.594,1206.105 z" stroke="#0000FF" stroke-width="0.24" fill-opacity="0" />
+  <path d="M1502.216,1206.105 L1502.216,1773.035 L1757.334,1773.035 L1757.334,1206.105 z" stroke="#0000FF" stroke-width="0.24" fill-opacity="0" />
+  <path d="M609.6184,1916.365 L1063.162,1916.365 L1063.162,2114.79 L1318.28,2114.79 L1318.28,2355.735 L609.6184,2355.735 z" stroke="#0000FF" stroke-width="0.24" fill-opacity="0" />
+  <path d="M609.6184,1076.646 L609.6184,637.2761 L1318.28,637.2761 L1318.28,878.2209 L1063.162,878.2209 L1063.162,1076.646 z" stroke="#0000FF" stroke-width="0.24" fill-opacity="0" />
 </svg>
