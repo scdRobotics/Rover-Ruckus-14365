@@ -1,0 +1,164 @@
+/* Copyright (c) 2017 FIRST. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without modification,
+ * are permitted (subject to the limitations in the disclaimer below) provided that
+ * the following conditions are met:
+ *
+ * Redistributions of source code must retain the above copyright notice, this list
+ * of conditions and the following disclaimer.
+ *
+ * Redistributions in binary form must reproduce the above copyright notice, this
+ * list of conditions and the following disclaimer in the documentation and/or
+ * other materials provided with the distribution.
+ *
+ * Neither the name of FIRST nor the names of its contributors may be used to endorse or
+ * promote products derived from this software without specific prior written permission.
+ *
+ * NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE GRANTED BY THIS
+ * LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+ * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+package org.firstinspires.ftc.teamcode;
+
+import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.robot.Robot;
+import com.qualcomm.robotcore.hardware.CRServo;
+import com.qualcomm.robotcore.hardware.Servo;
+import com.qualcomm.robotcore.hardware.Gyroscope;
+import com.qualcomm.robotcore.hardware.Blinker;
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import java.util.concurrent.TimeUnit;
+import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
+import org.firstinspires.ftc.robotcore.external.navigation.Rotation;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
+
+import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorEx;
+import com.qualcomm.robotcore.hardware.PIDCoefficients;
+
+import com.qualcomm.robotcore.hardware.DistanceSensor;
+import com.qualcomm.robotcore.util.ElapsedTime;
+import com.qualcomm.robotcore.util.Range;
+import com.qualcomm.robotcore.hardware.ColorSensor;
+import com.qualcomm.robotcore.eventloop.opmode.OpMode;
+
+
+
+
+/**
+ * This file contains an minimal example of a Linear "OpMode". An OpMode is a 'program' that runs in either
+ * the autonomous or the teleop period of an FTC match. The names of OpModes appear on the menu
+ * of the FTC Driver Station. When an selection is made from the menu, the corresponding OpMode
+ * class is instantiated on the Robot Controller and executed.
+ *
+ * This particular OpMode just executes a basic Tank Drive Teleop for a two wheeled robot
+ * It includes all the skeletal structure that all linear OpModes contain.
+ *
+ * Use Android Studios to Copy this Class, and Paste it into your team's code folder with a new name.
+ * Remove or comment out the @Disabled line to add this opmode to the Driver Station OpMode list
+ */
+@Autonomous(name="CraterFacing", group="Linear Opmode")
+
+public class CraterFacing extends autonomousPrime {
+
+    
+    @Override
+    public void runOpMode() {
+        
+        mapObjects();
+        // Wait for the game to start (driver presses PLAY)
+        waitForStart();
+        runtime.reset();
+
+
+        
+
+ 
+        
+        //*Begin Autonomous
+        //** Forward is where the Sampling Arms are
+
+        //*Step #1 - Lower Robot
+
+        //*** No encoder on the raise motor yet 
+        //** moves very fast so we should get this on en encoder before use
+            
+            //Step #2 - detach hanging pin
+        if (true) {
+            raiseRobotArm(1.95); //landing
+            liftPin.setPosition(0.55);
+            pause(1);
+        }
+        /*
+        //Step 3 - Move toward Sample
+
+            forwardEncoder(2.55);//was 2.43
+
+            pause(.1); 
+            
+
+            deployLeftSamplingArmToSample();
+            deployRightSamplingArmToSample();
+
+            //* pause to provide enough time for sampling arms to move
+            //**Step #5 - sample using color sensors move arms to appropriate spots
+            
+            motorPower = 0.3;
+            String SamplePos = getSample(lColor,rColor);
+             if (SamplePos.equals("Left")){
+                 goldLeft(); //** move right arm out of the way
+             } else if (SamplePos.equals("Right")) {
+                 goldRight(); //** move left arm out of the way
+             } else {
+                 goldMiddle();
+             }
+            storeBothSamplingArms(); //Just to be sure they are stored and safe
+                     
+        //** back up from Sample to prepare for turn
+        motorPower = 0.4;
+        reverseEncoder(1.25);
+        
+        //*** initial Move toward wall from Lander
+        motorPower = 0.3;
+        rightEncoder(90);
+        motorPower = 0.4;
+        reverseEncoder(5.2);
+        
+        //** First Adjust movement toward Claim
+        motorPower = 0.4;
+        leftEncoder(35);
+        
+        reverseEncoder(1.0);
+        //** Second Adjust movement toward Claim
+        motorPower = 0.4;
+        leftEncoder(20);// was 15
+        
+        //** Move toward Claim
+        motorPower = 0.9;
+        reverseEncoder(5.0);
+        //** At Claim - drop token
+        dropPlow_Servo();
+        motorPower = 0.9;
+        //** Race to park
+        forwardEncoder(9.5);
+        //leftEncoder(20);
+        //forwardEncoder(2.5);
+        raisePlow_Servo();
+        pause(1);
+        */
+        stop();
+ 
+    }
+    
+    
+    
+}
